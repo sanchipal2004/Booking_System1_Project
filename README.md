@@ -24,7 +24,13 @@ A full-stack hotel booking platform that allows users to search for hotels, book
 
 To run the project locally, follow these steps:
 
-### 1. Clone the Repository
+###  Clone the Repository
 
-```bash
+git clone https://github.com/sanchipal2004/Booking_System1_Project.git
 
+
+## 👨‍💻 Author
+
+[Sanchi Pal]
+
+GitHub: @sanchipal2004
