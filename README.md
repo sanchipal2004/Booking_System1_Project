@@ -20,9 +20,15 @@ A full-stack hotel booking platform that allows users to search for hotels, book
 - **Database:** MongoDB
 - **Authentication:** JSON Web Tokens (JWT)
 
+## 📸 Screenshots
+<img width="1685" height="888" alt="homepage" src="https://github.com/user-attachments/assets/2e33dc1c-5a1c-42bb-a0eb-f10487f211d7" />
+ <img width="1802" height="886" alt="Screenshot 2025-07-25 180130" src="https://github.com/user-attachments/assets/05f130e9-ef31-404d-8d4f-ed70965ae4f0" />
+ 
 ## 📦 Installation
 
-To run the project locally, follow these steps:
+To run the project
+locally, follow these steps:
+
 
 ###  Clone the Repository
 
@@ -30,6 +36,7 @@ git clone https://github.com/sanchipal2004/Booking_System1_Project.git
 
 
 ## 👨‍💻 Author
+
 
 [Sanchi Pal]
 
