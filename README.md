@@ -1,3 +1,4 @@
+
 # Booking_System1_Project
 A full-stack hotel booking platform that allows users to search for hotels, book rooms, and manage their bookings with ease. Built using the MERN stack, this system offers a seamless experience for both users and administrators.
 
@@ -41,3 +42,13 @@ git clone https://github.com/sanchipal2004/Booking_System1_Project.git
 [Sanchi Pal]
 
 GitHub: @sanchipal2004
+
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
