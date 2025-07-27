@@ -30,3 +30,4 @@ dist-ssr
 .env.*  # Optional: ignores .env.development, .env.production, etc.
 
 
+public/bg.mp4
