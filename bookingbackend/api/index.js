@@ -10,11 +10,12 @@ import cookieParser from 'cookie-parser'
 import bookingRoute from './routes/booking.js'
 import cors from 'cors'
 
+
 const app = express()
 dotenv.config()
 
 const connect = async ()=>{
- try {
+try {
     const uri =
       process.env.NODE_ENV === "local"
         ? process.env.MONGO_URI_LOCAL
@@ -28,7 +29,7 @@ const connect = async ()=>{
 } catch (error) {
   throw error;
 }
-};
+}
 mongoose.connection.on("disconnected", ()=>{
 console.log("mongodb disconnected")
 })
@@ -65,8 +66,8 @@ app.use((err,req,res,next)=>{
     stack:err.stack,
   })
 })
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, ()=>{
+
+app.listen(3000, ()=>{
   connect()
   console.log("connected to backend!.")
 });
