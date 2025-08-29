@@ -14,8 +14,16 @@ const app = express()
 dotenv.config()
 
 const connect = async ()=>{
-try {
-  await mongoose.connect("mongodb://localhost:27017");
+ try {
+    const uri =
+      process.env.NODE_ENV === "local"
+        ? process.env.MONGO_URI_LOCAL
+        : process.env.MONGO_URI_ATLAS;
+  
+        await mongoose.connect(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
   console.log("connect to mongodb.")
 } catch (error) {
   throw error;
