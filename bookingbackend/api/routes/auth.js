@@ -1,8 +1,8 @@
 import express from "express"
  import Users from "../models/Users.js";
  import bcrypt from "bcryptjs";
- import createError from "../../utilis/error.js";
- import jwt from "jsonwebtoken";
+ import createError from "../utilis/error.js"
+import jwt from "jsonwebtoken";
 const router = express.Router();
  router.post("/register", async(req,res,next)=>{
 
@@ -33,6 +33,7 @@ const router = express.Router();
     const isPasswordCorrect= await bcrypt.compare(req.body.password, User.password); // true
       if(!isPasswordCorrect)return next(createError(400,"wrong password or username"));
       const token= jwt.sign({id: User._id, isAdmin: User.isAdmin},process.env.JWT);
+      
       
 
 

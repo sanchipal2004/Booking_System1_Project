@@ -1,6 +1,6 @@
 import express  from "express"
 import Hotels1 from "../models/Hotels1.js"
-import { verifyadmin,verifytoken,verifyuser } from "../../utilis/verifytoken.js";
+import { verifyadmin,verifytoken,verifyuser } from "../utilis/verifytoken.js"
 
 import Rooms from "../models/Rooms.js"
 const router= express.Router()
