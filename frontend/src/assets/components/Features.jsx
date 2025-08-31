@@ -3,7 +3,7 @@ import useFetch from '../../hooks/useFetch'
 import { useNavigate } from 'react-router-dom';
 import "./featured.css"
 const Features = () => {
-  const {data,loading,error}= useFetch("api/Hotels/countByCity?cities=mumbai,udaipur,bengluru,goa");
+  const {data,loading,error}= useFetch("https://booking-backend-fnxh.onrender.com/api/Hotels/countByCity?cities=mumbai,udaipur,bengluru,goa");
  
   const navigate=useNavigate()
   const handleclickcity=(city)=>{
