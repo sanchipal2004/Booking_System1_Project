@@ -2,7 +2,7 @@ import React from 'react'
 import useFetch from '../../hooks/useFetch'
 
 const PropertyList = () => {
-  const {data,loading,error}= useFetch("api/Hotels/countByType");
+  const {data,loading,error}= useFetch("https://booking-backend-fnxh.onrender.com/api/Hotels/countByType");
   
 
   const images = [
