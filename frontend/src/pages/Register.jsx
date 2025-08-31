@@ -29,7 +29,7 @@ const handleClick= async (e)=>{
 
 dispatch({type:"LOGIN_START"});
 try{
-const res= await axios.post("/api/auth/register",formdata)
+const res= await axios.post("https://booking-backend-fnxh.onrender.com/api/auth/register",formdata)
 dispatch({type:"LOGIN_SUCCESS", payload:res.data});
   navigate('/')
 
