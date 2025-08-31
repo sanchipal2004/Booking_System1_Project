@@ -23,7 +23,7 @@ const loadrscript= ()=>{
 
 const Book = ({ setOpen, hotelId }) => {
     const [selectedRoom,setselectedRoom]= useState([])
-  const { data, loading, error } = useFetch(`/api/Hotels/rooms/${hotelId}`);
+  const { data, loading, error } = useFetch(`https://booking-backend-fnxh.onrender.com/api/Hotels/rooms/${hotelId}`);
   const {date}=useContext(SearchContext1)
   const{user}=useContext(AuthContext)
   
@@ -36,7 +36,7 @@ const handleClick= async()=>{
 
  try{
   await Promise.all(selectedRoom.map((roomId)=>{
-    const res = axios.put(`/api/rooms/availability/${roomId}`,{
+    const res = axios.put(`https://booking-backend-fnxh.onrender.com/api/rooms/availability/${roomId}`,{
       date:alldates,
     }); return res.data
   }));
@@ -122,3 +122,4 @@ setselectedRoom(checked?[...selectedRoom,value]:selectedRoom.filter((item)=>item
 
 
 export default Book
+
