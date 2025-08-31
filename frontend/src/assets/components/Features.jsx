@@ -2,7 +2,7 @@ import React from 'react'
 import useFetch from '../../hooks/useFetch'
 import { useNavigate } from 'react-router-dom';
 
-const features = () => {
+const Features = () => {
   const {data,loading,error}= useFetch("api/Hotels/countByCity?cities=mumbai,udaipur,bengluru,goa");
  
   const navigate=useNavigate()
@@ -58,4 +58,4 @@ const features = () => {
   )
 }
 
-export default features
+export default Features
