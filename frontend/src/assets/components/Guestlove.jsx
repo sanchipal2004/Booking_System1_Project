@@ -2,7 +2,7 @@ import React from 'react'
 import useFetch from '../../hooks/useFetch'
 import { useNavigate } from 'react-router-dom'
 const Guestlove = () => {
-  const {data,loading,error}= useFetch("api/Hotels?featured=true&limit=7")
+  const {data,loading,error}= useFetch("https://booking-backend-fnxh.onrender.com/api/Hotels?featured=true&limit=7")
 
   const navigate=useNavigate()
   const handlehotelclick=(item)=>{
