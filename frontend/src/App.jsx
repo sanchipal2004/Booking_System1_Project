@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Aboutus from './pages/Aboutus';
 import Hotels from "./pages/Hotels";
 import Product from "./pages/Product"
-import Nopage from "./assets/components/Nopage";
+import Nopage from "./assets/components/Nopage"
 import Login from './pages/Login';
 import Register from './pages/Register';
 import { BrowserRouter,Routes, Route } from "react-router-dom";

@@ -1,7 +1,7 @@
 import React from 'react'
 import useFetch from '../../hooks/useFetch'
 import { useNavigate } from 'react-router-dom';
-
+import "./featured.css"
 const Features = () => {
   const {data,loading,error}= useFetch("api/Hotels/countByCity?cities=mumbai,udaipur,bengluru,goa");
  
