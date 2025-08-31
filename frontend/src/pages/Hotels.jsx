@@ -1,4 +1,5 @@
 
+ 
   import React, { useContext, useState } from 'react'
 import Navbar from '../assets/components/Navbar'
 import Header from '../assets/components/Header' 
@@ -20,7 +21,7 @@ const Hotels = () => {
     const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
 
-    const {data,loading,error,reFetch}=useFetch(`api/Hotels?city=${destination}&min=${min || 0 }&max=${max || 500000}`);
+    const {data,loading,error,reFetch}=useFetch(`https://booking-backend-fnxh.onrender.com/api/Hotels?city=${destination}&min=${min || 0 }&max=${max || 500000}`);
 
    
  
@@ -34,7 +35,7 @@ const Hotels = () => {
     <div>
       <Navbar/>
   <div className="div ">
-    <video className='relative h-96 w-full object-cover' src="bg.mp4" autoPlay muted loop>
+    <video className='relative h-96 w-full object-cover' src="https://res.cloudinary.com/dtew9yhu8/video/upload/v1756634296/bg1_no4rzh.mp4" autoPlay muted loop>
         
        </video>
     <div className="card  text-white absolute top-24 left-96 mx-36 p-28 h-80 flex flex-col gap-4"  >
