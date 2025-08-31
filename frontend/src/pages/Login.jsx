@@ -32,7 +32,7 @@ const   handleClick = async(e)=>{
 
   dispatch({type:"LOGIN_START"});
   try{
-    const res=await axios.post("/api/auth/login",form);
+    const res=await axios.post("https://booking-backend-fnxh.onrender.com/api/auth/login",form);
     dispatch({type:"LOGIN_SUCCESS", payload:res.data});
     navigate("/")
   }catch(err){
@@ -50,7 +50,7 @@ const   handleClick = async(e)=>{
     <div>
       <Navbar/>
     <div className="loginpage w-full overflow-hidden  h-[400px] md:h-[892px] flex ">
-       <video className='  w-full object-cover' src="bg.mp4" autoPlay muted loop>
+       <video className='  w-full object-cover' src="https://res.cloudinary.com/dtew9yhu8/video/upload/v1756634296/bg1_no4rzh.mp4" autoPlay muted loop>
         
        </video>
         
