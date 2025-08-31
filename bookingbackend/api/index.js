@@ -43,7 +43,17 @@ app.get("/" , (req,res)=>{
 })
 
 //middleware
-app.use(cors())
+const allowedOrigins = [
+  "https://booking-system1-project.vercel.app", // deployed frontend
+  "http://localhost:5173", // local React dev
+  "http://localhost:3000", // optional dev
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ["GET","POST","PUT","DELETE"],
+  credentials: true
+}));
 app.use(express.json())
 app.use(cookieParser())
 app.use("/api/auth",authRoute);
@@ -66,8 +76,9 @@ app.use((err,req,res,next)=>{
     stack:err.stack,
   })
 })
-
-app.listen(3000, ()=>{
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, ()=>{
   connect()
   console.log("connected to backend!.")
 });
+
