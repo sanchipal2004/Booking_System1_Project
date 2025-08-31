@@ -23,7 +23,7 @@ export const Product = () => {
 const navigate=useNavigate()
 
 const {user}=useContext(AuthContext)
-const {data,loading,error}=useFetch(`/api/Hotels/find/${id}`);
+const {data,loading,error}=useFetch(`https://booking-backend-fnxh.onrender.com/api/Hotels/find/${id}`);
 const {date,options}= useContext(SearchContext1)
 
 
