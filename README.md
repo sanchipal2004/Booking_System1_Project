@@ -34,7 +34,17 @@ locally, follow these steps:
 
 git clone https://github.com/sanchipal2004/Booking_System1_Project.git
 
-https://booking-system1-project.vercel.app/
+Frontend 
+
+cd frontend
+
+npm run dev
+
+backend
+
+cd bookingbackend
+
+nodemon index.js
 
 ## 👨‍💻 Author
 
